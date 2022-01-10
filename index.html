@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spells that I'd Like to Learn</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="spell_title" class="primary">Spell Title</label>
+          <input type="text" id="spell_title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="wizard_witch" class="primary">Wizard/Witch</label>
+          <input type="text" id="wizard_witch" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="difficulty_rating" class="primary">Difficulty Rating</label>
+          <select id="difficulty_rating">
+            <option value="" disabled selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>List of Spells</h1>
+    <ul id="spells-list"></ul>
+  </body>
+</html>
